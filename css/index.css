@@ -1,6 +1,6 @@
 .index-banner
 {
-    background: url('../img/heroimg.jpg') no-repeat scroll center;
+    /* background: url('../img/heroimg.jpg') no-repeat scroll center; */
     min-height: 500px;
     max-height: 500px;
     position: relative;

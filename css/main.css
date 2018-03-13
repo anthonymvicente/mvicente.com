@@ -2,7 +2,41 @@ body
 {
     background-color: #EAEAEA;
     font-family: 'Open Sans', sans-serif;
-    padding-top: 50px;
+    margin: 0px 0px;
+}
+
+header {
+    background: #3498DB;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.headerContent {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    color: #FFFFFF;
+}
+
+.headerContent a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.headerContent img {
+    min-height: 30px;
+    min-width: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.navButton {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+a:hover {
+    background-color: #0F639B;
 }
 
 .navbar

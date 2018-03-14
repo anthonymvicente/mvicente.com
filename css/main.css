@@ -1,10 +1,3 @@
-body
-{
-    background-color: #EAEAEA;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0px 0px;
-}
-
 header {
     background: #3498DB;
     position: fixed;
@@ -23,6 +16,10 @@ header {
     color: #FFFFFF;
 }
 
+.headerContent a:hover {
+    background-color: #0F639B;
+}
+
 .headerContent img {
     min-height: 30px;
     min-width: 30px;
@@ -32,17 +29,25 @@ header {
 
 .navButton {
     text-align: center;
+    height: 30px;
     padding: 10px 10px;
 }
 
-a:hover {
-    background-color: #0F639B;
+.linkLabel {
+    padding: 6px 0px;
 }
 
 .navbar
 {
     /* background-color: #266D89;*/
     background-color: #3498DB;
+}
+
+body
+{
+    background-color: #EAEAEA;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px 0px;
 }
 
 .navbar-default .home-brand , .navbar-default .home-brand:focus, .navbar-default .navbar-nav li > a, .navbar-default .navbar-nav li > a:hover, .navbar-default .navbar-nav li > a:focus

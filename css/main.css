@@ -1,46 +1,50 @@
-header {
+.navShow {
     background: #3498DB;
+    display: none;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    position: fixed;
+}
+
+.navMenu {
     position: fixed;
     width: 100%;
     z-index: 100;
 }
 
-.headerContent {
-    display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    color: #FFFFFF;
+.navList {
+    background: #3498DB;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
 }
 
-.headerContent a {
+.navListItem {
+    display: inline-block;
+    float: left;
+}
+
+.navMenu a {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.headerContent a:hover {
+.navMenu .navListItem:hover {
     background-color: #0F639B;
 }
 
-.headerContent img {
-    min-height: 30px;
-    min-width: 30px;
-    height: 30px;
-    width: 30px;
-}
-
 .navButton {
-    text-align: center;
-    height: 30px;
     padding: 10px 10px;
 }
 
 .linkLabel {
     padding: 6px 0px;
-}
-
-.navbar
-{
-    /* background-color: #266D89;*/
-    background-color: #3498DB;
 }
 
 body
@@ -50,49 +54,26 @@ body
     margin: 0px 0px;
 }
 
-.navbar-default .home-brand , .navbar-default .home-brand:focus, .navbar-default .navbar-nav li > a, .navbar-default .navbar-nav li > a:hover, .navbar-default .navbar-nav li > a:focus
+@media(max-width: 500px)
 {
-    color: #EAEAEA;
-}
+    .navShow {
+        display: block;
+        width: 100%;
+        z-index: 100;
+    }
 
-.navbar li:hover, .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
-{
-    background-color: #0F639B;
-    color: #EAEAEA;
-}
+    .navShow:hover {
+        background-color: #0F639B;
+    }
 
-.navbar li
-{
-    width: 120px;
-}
+    .navList {
+        font-size: 1.25rem;
+        display: none;
+    }
 
-.navbar-nav .fa-external-link
-{
-    font-size: .8em;
-}
-
-p
-{
-    line-height: 2.4em;
-}
-
-img
-{
-    max-height: 100%;
-    max-width: 100%;
-}
-
-@media (max-width: 768px)
-{
-img
-{
-    display: block;
-    margin: 0 auto;
-    max-height: 50%;
-    max-width: 50%;
-}
-.navbar li
-{
-    width: auto;
-}
+    .navListItem {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #FFFFFF;
+    }
 }

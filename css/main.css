@@ -30,6 +30,10 @@
     float: left;
 }
 
+.navListItem.menuButton {
+    display: none;
+}
+
 .navMenu a {
     text-decoration: none;
     color: #FFFFFF;
@@ -68,12 +72,16 @@ body
 
     .navList {
         font-size: 1.25rem;
-        display: none;
     }
 
     .navListItem {
         width: 100%;
         text-align: center;
         border-bottom: 1px solid #FFFFFF;
+        display: none;
+    }
+
+    .navListItem.menuButton {
+        display: block;
     }
 }

@@ -36,6 +36,7 @@ window.addEventListener('resize', function() {
         $('.navList').children('.navListItem').not('.menuButton').hide();
         $('.menuButton').on('click', menuToggle);
         $('.navList').on('mouseleave', menuDropUp);
+        menuDown = false;
     } else {
         menuDropDown();
         $('.menuButton').off();

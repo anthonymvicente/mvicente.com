@@ -13,122 +13,70 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <!--<div class="navShow">
-            Menu
-        </div>-->
         <nav class="navMenu">
             <ul class="navList">
                 <li class="navListItem menuButton">
                     <a href="#">
                         <div class="navButton">
-                            <div class="linkLabel">Menu</div>
+                            <span class="linkLabel">Menu</span>
                         </div>
                     </a>
                 </li>
                 <li class="navListItem">
                     <a href="/" title="home">
                         <div class="navButton">
-                            <div class="linkLabel">Home</div>
-                        </div>
-                    </a>
-                </li>
-                <li class="navListItem">
-                    <a href="./contact.html" title="contact me">
-                        <div class="navButton">
-                            <div class="linkLabel">Contact</div>
+                            <span class="linkLabel">Home</span>
                         </div>
                     </a>
                 </li>
                 <li class="navListItem">
                     <a href="./photos" title="photos">
                         <div class="navButton">
-                            <div class="linkLabel">Photos</div>
+                            <span class="linkLabel">Photos</span>
                         </div>
                     </a>
                 </li>
                 <li class="navListItem">
                     <a href="./docs/anthony_vicente_resume.pdf" target="_blank" title="resume">
                         <div class="navButton">
-                            <div class="linkLabel">Resume</div>
+                            <span class="linkLabel">Resume</span>
                         </div>
                     </a>
                 </li>
                 <li class="navListItem">
                     <a href="https://www.github.com/anthonymvicente" target="_blank" title="github">
                         <div class="navButton">
-                            <div class="linkLabel">GitHub</div>
+                            <span class="linkLabel">GitHub</span>
                         </div>
                     </a>
                 </li>
                 <li class="navListItem">
                     <a href="https://www.linkedin.com/in/anthonymvicente" target="_blank" title="linkedin">
                         <div class="navButton">
-                            <div class="linkLabel">LinkedIn</div>
+                            <span class="linkLabel">LinkedIn</span>
                         </div>
                     </a>
                 </li>
             </ul>
         </nav>
-        <div class="container-fluid index-banner">
-            <div class="row content index-row">
-                <div class="col-md-4 col-sm-1 col-xs-2">
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-8 index-col">
-                    <h2 class="text-center">Anthony M. Vicente <br/><small>Software Developer</small></h2>
-                    <p class="text-center info-snip">
-                        I'm a software developer currently working for the University of Nebraska. I develop applications and system enhancements for both faculty and students within the university. My professional experience is primarily in PeopleCode and SQL with a little Java thrown in. In my free time I enjoy photography, movies, reading, and the occasional videogame.
-                    </p>
-                </div>
+        <div class="headerFiller"></div>
+        <div class="mainContent">
+            <div class="headshot">
+                <img src="./img/headshot-800.jpg">
             </div>
-            <div class="content-project">
-                <div class="row content proj-row">
-                    <div class="col-md-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h2 class="panel-title">arb-reader <small><span class="label label-default">C</span> <span class="label label-default">complete</span></small></h2>
-                            </div>
-                            <div class="panel-body">
-                                <div class="row content">
-                                    <div class="col-md-2">
-                                        <a href="./img/arb-reader.gif" target="_blank" title="arb-reader image"><img class="media-object" alt="arb-reader image" src="./img/arb-reader-resize.gif"></a>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <p>
-                                            arb-reader is a small C program used to output random sections of text from a random text file. The user will provide a file containing paths to text files they wish to be part of the pool of potential source texts. The list file is expected to be delineated by new lines for each text file. arb-reader was created to be used in conjunction with the xscreensaver Phosphor to let a user compile a list of possible sources for Phosphor to display.
-                                        </p>
-                                        <p>
-                                            <a href="https://www.github.com/anthonymvicente/arb-reader" target="_blank">git project</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row content proj-row">
-                    <div class="col-md-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h2 class="panel-title">dware <small><span class="label label-default">java</span></small></h2>
-                            </div>
-                            <div class="panel-body">
-                                <div class="row content">
-                                    <div class="col-md-2">
-                                        <img class="media-object" alt="dware image" src="./img/dice.png">
-                                    </div>
-                                    <div class="col-md-10">
-                                        <p>
-                                            dware is a project to allow users to create Diceware style passwords with ease. At the moment there are three planned stages for this project. The initial stage, a CLI implementation, is used to establish the backend components for future stages. Stage two is a graphical interface for desktop use. The final stage will be an Android application to enable quick and easy password generation via mobile platforms.
-                                        </p>
-                                        <p>
-                                            <a href="https://www.github.com/anthonymvicente/dware" target="_blank">git project</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <p class="infoParagraph">
+                My name is Anthony and I'm a software developer in Lincoln, Nebraska. I currently work for <a href="https://www.rentping.com" target="_blank">rentping</a> creating websites and marketing management software for apartment communities. I work primarily in several web development technologies (HTML using Mustache, CSS using Less, Javascript, etc.) for website creation and Java for back-end systems. I graduated from the University of Nebraska - Lincoln in 2015 with a degree in Computer Science. At UNL, I focused my classes on algorithms and system administration. After graduating, I worked for the university as part of NeSIS (Nebraska Student Information System) for nearly three years. Beyond work, my Computer Science interests are in cryptography and computer security. Outside of work, I enjoy photography, games (both video and board), and reading (mostly science fiction or non-fiction in the realm of, you guessed it, computer science). Although I do occasionally work on personal projects to strengthen my development skills outside of work, I've found that exploring my other interests helps maintain a good balance and enjoy both to a greater degree.
+            </p>
+            <div class="contactInfo">
+                <p class="infoParagraph">
+                    If, for some crazy reason, you'd like to contact me, the easiest way is via email at <a href="mailto:anthony@mvicente.com" title="email">anthony@mvicente.com</a>
+                </p>
+                <p class="infoParagraph">
+                    For encrypted communcation you will find my GPG Fingerprint below with a link to my public key via the MIT Keyserver.
+                </p>
+                <p class="infoParagraph">
+                    <a href="https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&search=0x8B4CE6CDC2CE4BEE" target="_blank" title="GPG Key">B5E9 B128 F8CB A90D D54A  57A9 8B4C E6CD C2CE 4BEE</a>
+                </p>
             </div>
         </div>
     </body>

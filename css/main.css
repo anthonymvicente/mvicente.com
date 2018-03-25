@@ -1,15 +1,3 @@
-.navShow {
-    background: #3498DB;
-    display: none;
-    height: 50px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 50px;
-    font-size: 1.5rem;
-    color: #FFFFFF;
-    position: fixed;
-}
-
 .navMenu {
     position: fixed;
     width: 100%;
@@ -19,6 +7,7 @@
 .navList {
     background: #3498DB;
     width: 100%;
+    height: 49px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -26,6 +15,7 @@
 }
 
 .navListItem {
+    background: #3498DB;
     display: inline-block;
     float: left;
 }
@@ -44,11 +34,7 @@
 }
 
 .navButton {
-    padding: 10px 10px;
-}
-
-.linkLabel {
-    padding: 6px 0px;
+    padding: 13px 10px;
 }
 
 body
@@ -56,6 +42,30 @@ body
     background-color: #EAEAEA;
     font-family: 'Open Sans', sans-serif;
     margin: 0px 0px;
+}
+
+.headerFiller {
+    height: 49px;
+}
+
+.mainContent {
+    padding: 0px 5%;
+}
+
+.infoParagraph {
+    line-height: 40px;
+}
+
+.headshot {
+    height: 200px;
+    width: 200px;
+    float: right;
+    margin: 20px;
+}
+
+.headshot img {
+    height: 100%;
+    width: 100%;
 }
 
 @media(max-width: 500px)
@@ -66,16 +76,22 @@ body
         z-index: 100;
     }
 
+    .navButton {
+        padding: 11px 10px;
+    }
+
     .navShow:hover {
         background-color: #0F639B;
     }
 
     .navList {
+        height: 49px;
         font-size: 1.25rem;
     }
 
     .navListItem {
         width: 100%;
+        height: 49px;
         text-align: center;
         border-bottom: 1px solid #FFFFFF;
         display: none;
@@ -83,5 +99,9 @@ body
 
     .navListItem.menuButton {
         display: block;
+    }
+
+    .headshot {
+        display: none;
     }
 }

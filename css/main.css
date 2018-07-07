@@ -66,6 +66,10 @@
 
 @media(max-width: 500px)
 {
+    .nav-menu__nav-list {
+        display:flex;
+        justify-content: space-around;
+    }
     .main-content__headshot {
         display: none;
     }

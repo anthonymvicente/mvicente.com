@@ -37,7 +37,7 @@
 }
 
 .nav-menu__nav-item:hover {
-    background-color: #0F639B;
+    font-weight: 600;
 }
 
 .header-filler {

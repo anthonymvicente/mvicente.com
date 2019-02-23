@@ -1,3 +1,22 @@
 .card-row {
     display: flex;
 }
+
+.card {
+    flex: 0 0 20%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(75, 75, 75, 0.62);
+
+    transition: margin 150ms linear, box-shadow 150ms linear;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 2px 1px rgba(75, 75, 75, 0.62)
+}
+
+.card:not(:last-child):hover {
+    margin: 10px -5px 10px 10px;
+}

@@ -37,6 +37,10 @@
     margin: 10px 10px 10px 25px;
 }
 
+.horizontal-card-row .shifted-card--last {
+    margin: 10px 10px 10px 50px;
+}
+
 .vertical-card-row {
     flex-direction: column;
     align-items: center;
@@ -62,4 +66,8 @@
 
 .vertical-card-row .shifted-card {
     margin: 25px 10px 10px 10px;
+}
+
+.vertical-card-row .shifted-card--last {
+    margin: 50px 10px 10px 10px;
 }

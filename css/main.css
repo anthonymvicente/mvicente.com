@@ -5,6 +5,18 @@
     margin: 0px 0px;
 }
 
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #4987af;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    color: #155A87;
+
+}
+
 .nav-menu {
     position: fixed;
     width: 100%;
@@ -32,12 +44,13 @@
 }
 
 .nav-menu a {
-    text-decoration: none;
+    font-weight: 400;
     color: #FFFFFF;
 }
 
-.nav-menu__nav-item:hover {
+.nav-menu__nav-item a:hover, .nav-menu__nav-item a:focus {
     font-weight: 600;
+    text-decoration: underline;
 }
 
 .header-filler {

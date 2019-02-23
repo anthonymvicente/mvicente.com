@@ -3,20 +3,63 @@
 }
 
 .card {
+    color: #ffffff;
+    background-color: #4987AF;
     flex: 0 0 20%;
     margin: 10px;
     padding: 10px;
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 1px rgba(75, 75, 75, 0.62);
+    z-index: 1;
 
-    transition: margin 150ms linear, box-shadow 150ms linear;
+    transition: margin 150ms linear, box-shadow 150ms linear, z-index 50ms linear 75ms;
 }
 
 .card:hover {
-    box-shadow: 10px 10px 2px 1px rgba(75, 75, 75, 0.62)
+    z-index: 2;
+    box-shadow: 0px 10px 10px 5px rgba(75, 75, 75, 0.62)
 }
 
-.card:not(:last-child):hover {
-    margin: 10px -5px 10px 10px;
+.horizontal-card-row .card:first-child:hover {
+    margin: 10px -25px 10px 10px;
+}
+
+.horizontal-card-row .card:not(:first-child):not(:last-child):hover {
+    margin: 10px -25px 10px -25px;
+}
+
+.horizontal-card-row .card:last-child:hover {
+    margin: 10px 10px 10px -25px;
+}
+
+.horizontal-card-row .shifted-card {
+    margin: 10px 10px 10px 25px;
+}
+
+.vertical-card-row {
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+}
+
+.vertical-card-row .card {
+    width: 20rem;
+    max-height: 100px;
+}
+
+.vertical-card-row .card:first-child:hover {
+    margin: 10px 10px -25px 10px;
+}
+
+.vertical-card-row .card:not(:first-child):not(:last-child):hover {
+    margin: -25px 10px -25px 10px;
+}
+
+.vertical-card-row .card:last-child:hover {
+    margin: -25px 10px 10px 10px;
+}
+
+.vertical-card-row .shifted-card {
+    margin: 25px 10px 10px 10px;
 }

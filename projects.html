@@ -54,10 +54,10 @@
             <div class="main-content__project-section">
                 <h2>Card Focus</h2>
                 <p class="project-section__info-paragraph">
-                    Verear quaeque gloriatur vis at, pro no affert integre. Et vide iuvaret vis, ad legere persius principes quo. Usu nonumy putent id. Sed ex sale lorem graeci. Vim at omnes constituam.
+                    This is a fairly simple effect to give the appearance of a card 'popping out' of the screen towards the user when focused. In this case focus is given to the card being hovered over. Making the cards shift to the left 'under' the card being focused was fairly simple; transitioning the margins for the focused card to bring the cards on either side in. However, this makes it look like the focused card moves far to the left, and the cards to the left of the focused card remain still. This is where javascript comes in. We add event listeners to each card (except the first) to add/remove a class to the first card that shifts it and all subsequent cards right, moving them under the focused card. We also transition the box-shadow and z-index to increase the visual effect, and we're done.
                 </p>
                 <div class="project-section__demo-section">
-                    <div class="card-row">
+                    <div class="card-row horizontal-card-row">
                         <div class="card">
                             Lorem ipsum dolor sit amet, ne sed mundi interesset, cu meis vidisse usu, solum labitur an vis. An dolor facilis nam. Putent insolens his eu, vix et nusquam assueverit, eu vim fabulas oportere repudiandae. Vix aliquid feugait dissentiet an. Est et unum veniam, sea eu altera omnium constituam. At essent denique iudicabit cum, ut his case omnium.
                         </div>
@@ -71,6 +71,27 @@
                             Nostrud volutpat delicatissimi vis in, ex salutandi efficiantur mei, putant apeirian mea no. Eu mei erat offendit. Pri ut rationibus efficiantur. Ea dicat eleifend quo, mea eu forensibus ullamcorper, duo ornatus mediocritatem an. Ex eum commune mnesarchum, vero utinam nam in.
                         </div>
                     </div>
+                </div>
+                <p class="project-section__demo-section">
+                    We can also do vertical cards.
+                </p>
+                <div class="project-section__demo-section">
+                    <div class="card-row vertical-card-row">
+                        <div class="card">
+                            Lorem ipsum dolor sit amet, ne sed mundi interesset, cu meis vidisse usu, solum labitur an vis. An dolor facilis nam.
+                        </div>
+                        <div class="card">
+                            Sale paulo vocibus in ius, tantas inimicus suavitate cu mea. Mei graeco alienum ocurreret no, numquam apeirian pertinax mel et, at altera putant scribentur cum.
+                        </div>
+                        <div class="card">
+                            Case tantas scribentur eos no. His quod nonumy qualisque an, eum at detraxit consequat referrentur, has ea harum docendi inimicus.
+                        </div>
+                        <div class="card">
+                            Nostrud volutpat delicatissimi vis in, ex salutandi efficiantur mei, putant apeirian mea no. Eu mei erat offendit. Pri ut rationibus efficiantur.
+                        </div>
+                    </div>
+                </div>
+                    <script type="text/javascript" src="js/cards.js"></script>
                 </div>
             </div>
         </div>

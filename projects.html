@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/projects.css">
         <link rel="stylesheet" type="text/css" href="css/cards.css">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body class="page-content">
@@ -53,6 +53,34 @@
         <div class="main-content">
             <div class="main-content__project-section">
                 <h2>Card Focus</h2>
+                <div class="project-section__source-code">
+                    <span class="source-code__link">
+                        <button>
+                            View HTML
+                            <span class="screen-reader-label">(expands source code on page)</span>
+                        </button>
+                    </span>
+                    <span class="source-code__link">
+                        <button>
+                            View CSS
+                            <span class="screen-reader-label">(expands source code on page)</span>
+                        </button>
+                    </span>
+                    <span class="source-code__link">
+                        <button>
+                            View JS
+                            <span class="screen-reader-label">(expands source code on page)</span>
+                        </button>
+                    </span>
+                    <span class="source-code__link">
+                        <a href="https://gitlab.com/anthonymvicente/examples/tree/master/card_focus" target="_blank">
+                            Full Source
+                            <span class="screen-reader-label">(opens external site in new tab)</span>
+                        </a>
+                    </span>
+                    <div class="source-code__embed">
+                    </div>
+                </div>
                 <p class="project-section__info-paragraph">
                     This is a fairly simple effect to give the appearance of a card 'popping out' of the screen towards the user when focused. In this case focus is given to the card being hovered over. Making the cards shift to the left 'under' the card being focused was fairly simple; transitioning the margins for the focused card to bring the cards on either side in. However, this makes it look like the focused card moves far to the left, and the cards to the left of the focused card remain still. This is where javascript comes in. We add event listeners to each card (except the first) to add/remove a class to the first card that shifts it and all subsequent cards right, moving them under the focused card. We can also target the last card, so that when focused, a special class is added to the first card to shift it further than other card focuses. This makes the behavior of the first and last cards consistent in that all cards shift to move 'under' them.  We also transition the box-shadow and z-index to increase the visual effect, and we're done.
                 </p>

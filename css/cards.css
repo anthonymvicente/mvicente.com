@@ -2,35 +2,55 @@
     display: flex;
 }
 
+.horizontal-card-row {
+    justify-content: center;
+}
+
+.vertical-card-row {
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+
 .card {
     color: #ffffff;
     background-color: #4987AF;
-    flex: 0 0 20%;
     margin: 10px;
     padding: 10px;
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 1px rgba(75, 75, 75, 0.62);
     z-index: 1;
-
     transition: margin 150ms linear, box-shadow 150ms linear, z-index 50ms linear 75ms;
+
+    flex: 0 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
 }
 
 .card:hover {
     z-index: 2;
-    box-shadow: 0px 10px 10px 5px rgba(75, 75, 75, 0.62)
+    box-shadow: 0px 10px 10px 5px rgba(75, 75, 75, 0.80);
+}
+
+.vertical-card-row .card:hover {
+    box-shadow: 0px 0px 10px 5px rgba(75, 75, 75, 0.80);
 }
 
 .horizontal-card-row .card:first-child:hover {
     margin: 10px -25px 10px 10px;
 }
 
-.horizontal-card-row .card:not(:first-child):not(:last-child):hover {
-    margin: 10px -25px 10px -25px;
-}
-
 .horizontal-card-row .card:last-child:hover {
     margin: 10px 10px 10px -25px;
+}
+
+.horizontal-card-row .card:not(:first-child):not(:last-child):hover {
+    margin: 10px -25px 10px -25px;
 }
 
 .horizontal-card-row .shifted-card {
@@ -41,27 +61,16 @@
     margin: 10px 10px 10px 50px;
 }
 
-.vertical-card-row {
-    flex-direction: column;
-    align-items: center;
-    height: 550px;
-}
-
-.vertical-card-row .card {
-    width: 20rem;
-    max-height: 100px;
-}
-
 .vertical-card-row .card:first-child:hover {
     margin: 10px 10px -25px 10px;
 }
 
-.vertical-card-row .card:not(:first-child):not(:last-child):hover {
-    margin: -25px 10px -25px 10px;
-}
-
 .vertical-card-row .card:last-child:hover {
     margin: -25px 10px 10px 10px;
+}
+
+.vertical-card-row .card:not(:first-child):not(:last-child):hover {
+    margin: -25px 10px -25px 10px;
 }
 
 .vertical-card-row .shifted-card {
@@ -71,3 +80,7 @@
 .vertical-card-row .shifted-card--last {
     margin: 50px 10px 10px 10px;
 }
+
+.card {
+}
+

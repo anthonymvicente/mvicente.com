@@ -96,3 +96,9 @@ a:hover, a:focus {
         display: none;
     }
 }
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+}

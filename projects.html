@@ -3,10 +3,13 @@
     <head>
         <title>Personal Site for Anthony M. Vicente</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/projects.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script type="text/javascript" src="js/projects.js" defer></script>
 
         <link rel="stylesheet" type="text/css" href="css/cards.css">
         <script type="text/javascript" src="js/cards.js" defer></script>
@@ -57,19 +60,19 @@
                 <h2>Card Focus</h2>
                 <div class="project-section__source-code" id="card-focus">
                     <span class="source-code__link">
-                        <button data-code-src="https://gitlab.com/anthonymvicente/examples/snippets/1829582.js">
+                        <button data-code-lang="html">
                             View HTML
                             <span class="screen-reader-label">(expands source code on page)</span>
                         </button>
                     </span>
                     <span class="source-code__link">
-                        <button data-code-src="https://gitlab.com/anthonymvicente/examples/snippets/1829593.js">
+                        <button data-code-lang="css">
                             View CSS
                             <span class="screen-reader-label">(expands source code on page)</span>
                         </button>
                     </span>
                     <span class="source-code__link">
-                        <button data-code-src="https://gitlab.com/anthonymvicente/examples/snippets/1829594.js">
+                        <button data-code-lang="js">
                             View JS
                             <span class="screen-reader-label">(expands source code on page)</span>
                         </button>
@@ -81,6 +84,15 @@
                         </a>
                     </span>
                     <div class="source-code__embed">
+                        <div class="embed__html" data-src-code="html">
+                            <script src="https://gitlab.com/anthonymvicente/examples/snippets/1829582.js"></script>
+                        </div>
+                        <div class="embed__css" data-src-code="css">
+                            <script src="https://gitlab.com/anthonymvicente/examples/snippets/1829593.js"></script>
+                        </div>
+                        <div class="embed__js" data-src-code="js">
+                            <script src="https://gitlab.com/anthonymvicente/examples/snippets/1829594.js"></script>
+                        </div>
                     </div>
                 </div>
                 <p class="project-section__info-paragraph">

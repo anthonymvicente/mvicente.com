@@ -26,9 +26,43 @@
     transition: background 200ms linear, color 200ms linear, border 200ms linear;
 }
 
-.source-code__link:hover button {
+.source-code__link button:hover,
+.source-code__link button:focus,
+.source-code__link button.button--open {
     cursor: pointer;
     border: 1px solid #4987af;
     background: #ffffff;
     color: #4987af;
+}
+
+.source-code__embed {
+    position: relative;
+    margin: 10px 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 250ms linear;
+}
+
+.source-code__embed.source-code__embed--open {
+    height: 300px;
+}
+
+.embed__html,
+.embed__css,
+.embed__js {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    overflow-y: scroll;
+    transition: height 250ms linear;
+}
+
+.embed__html.embed--open,
+.embed__css.embed--open,
+.embed__js.embed--open {
+    height: 300px;
+}
+
+.source-code__embed .gitlab-embed-snippets {
+    margin: 0;
 }

@@ -13,21 +13,18 @@ function toggleSourceCode(event) {
 
     // no other code is open
     if (!displayedLanguage) {
-        console.log('opening language');
         button.className += ' button--open';
         embedDiv.dataset.codeLang = targetLanguage;
         embedDiv.className += ' source-code__embed--open';
         targetEmbed.className += ' embed--open';
     // we're closing the language that's already open
     } else if (targetLanguage === displayedLanguage) {
-        console.log('closing language');
         button.className = button.className.replace(' button--open', '');
         delete embedDiv.dataset.codeLang;
         embedDiv.className = embedDiv.className.replace(' source-code__embed--open', '');
         targetEmbed.className = targetEmbed.className.replace(' embed--open', '');
     // we're selecting a different language while the embed is already open
     } else {
-        console.log('switching languages');
         // close the currently open button
         const openButton = button.parentNode.parentNode.getElementsByClassName('button--open')[0];
         openButton.className = openButton.className.replace(' button--open', '');
